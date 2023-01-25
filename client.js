@@ -5,7 +5,7 @@ export const client = sanityClient({
   projectId: 'jyectflh',
   dataset: 'production',
   apiVersion: '2021-08-31',
-  useCdn: true,
+  useCdn: false,
   token: process.env.NEXT_SANITY_PUBLIC_TOKEN,
 })
 
