@@ -4,9 +4,9 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
   const navigation = [
-    "About",
-    "Training",
-    "Pricing",
+    
+    "Training", 
+    "Price",
     "Contact",
     
   ];
@@ -24,11 +24,11 @@ export default function Navbar() {
                   className="flex items-center space-x-2 text-6xl font-medium text-white ">
 
                   <span>
-                    <img 
+                    <img class="h-20 w-20"
                       src="/img/logo.png"
                       alt="N"
-                      width="72"
-                      height="72"
+                      // width=""
+                      // height="80"
                       className="w-8"
                     />
                   </span>
@@ -73,9 +73,9 @@ export default function Navbar() {
                     ))}
                     <Link
                       href="/"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                      className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5">
                       
-                        Get Started
+                        Join Now
                       
                     </Link>
                   </>
@@ -103,11 +103,17 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
+          <Link  
+            href="" 
+            className="inline-block px-6 py-4 text-3xl font-normal text-white no-underline rounded-md hover:bg-neutral-300 hover:text-black   focus:outline-none ">
+            Sign in
+
+          </Link>
           <Link
             href="/"
             className="bg-red-500 hover:bg-red-700 font-bold text-3xl px-6 py-4 text-white rounded-md md:ml-5">
             
-              Start Training
+              Join Now
             
           </Link>
         </div>
