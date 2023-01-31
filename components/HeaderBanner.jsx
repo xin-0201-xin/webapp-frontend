@@ -8,7 +8,7 @@ const HeaderBanner = ({banner}) => {
       <div className="flex justify-center">
         <h1 className='text-white text-4xl -ml-[100px] uppercase'>{banner.largeText1}{banner.midText}</h1>
         <img src={urlFor(banner.image)} alt="" className='absolute top-0 right-1/4 h-[450px] w-[450px]'  />
-        <Link href={`/product/${banner.product}`}> 
+        <Link href={`/product/${banner.product}`} legacyBehavior> 
           <button className='mt-[600px] -ml-[200px] -ml-[1500px] rounded-2xl py-[10px] px-[16px] bg-[#6c7a89] text-white border-0 mt-[40px] text-3xl font-medium cursor-pointer z-[10000]'type='button'>{banner.buttonText}</button>
         </Link>
       </div>
@@ -18,7 +18,7 @@ const HeaderBanner = ({banner}) => {
         </Link> */}
       {/* </div> */}
     </div>
-  )
+  );
 }
 
 export default HeaderBanner

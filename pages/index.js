@@ -37,7 +37,7 @@ export default function Home({heroImageData}) {
 {/* <Navbar /> */}
    
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Personal Trainer Xin</title>
         <meta
           name="description"
           content="Nextly is a free landing page template built with next.js & Tailwind CSS"
@@ -45,16 +45,18 @@ export default function Home({heroImageData}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* <div
+        class="w-full h-screen bg-[url('../public/img/herobg.jpg')] bg-cover bg-center bg-fixed"> */}
+      <Navbar class="sticky top-0"/>
       
       <Hero heroImage={heroImageData.length && heroImageData[0]}/>
 
+      {/* </div> */}
       
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        // pretitle="Nextly Benefits"
+        title=" Why you start to work-out?">
+        Improve your strength? Manage your weight? Reduce the risk of disease? Wanna get your body in a good shape? All of these goals Xin can help you achieve.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />

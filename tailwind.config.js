@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'heroBg': "url('/public/img/herobg.jpg')",
+        // 'heroBg': "url('/public/img/herobg.jpg')",
       }
     },
       fontFamily: {
