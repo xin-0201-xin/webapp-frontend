@@ -9,16 +9,16 @@ import Navbar from './navbar'
 export default function Hero({heroImage}) {
   
   return (
-    <>
+    <div class="relative">
     
     <div
         class="w-full h-screen bg-[url('../public/img/herobg.jpg')] bg-cover bg-center bg-fixed mt-[-150px] blur-[2px]">
     </div>
         {/* <div class="w-ful h-full backdrop-blur-[2px]"> */}
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center backdrop-blur-[2px] ">
-            <h3 class="font-semibold drop-shadow-lg text-white text-4xl ml-[6px]">Be Consistent And No Excuses.</h3>
-            <h1 class="font-semibold drop-shadow-lg text-7xl text-white">GET YOUR BODY IN SHAPE.</h1>
-            <h1 class="mt-5 text-8xl text-white font-semibold drop-shadow-lg">Start training with Xin!</h1>
+          <div class="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center backdrop-blur-[2px] ">
+            <h3 class="font-semibold drop-shadow-lg text-white text-5xl ml-[6px]">Be Consistent And No Excuses.</h3>
+            <h1 class="font-semibold drop-shadow-lg text-8xl text-white">GET YOUR BODY IN SHAPE.</h1>
+            <h1 class="mt-5 text-9xl text-white font-semibold drop-shadow-lg">Start training with Xin!</h1>
           </div>
         {/* </div> */}
     {/* </div> */}
@@ -41,7 +41,7 @@ export default function Hero({heroImage}) {
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-red-600 rounded-md ">
                 Download for Free
               </a>
               <a
@@ -84,7 +84,7 @@ export default function Hero({heroImage}) {
       {/* <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">2000+</span>{" "}
+            Trusted by <span className="text-red-600">2000+</span>{" "}
             customers worldwide
           </div>
 
@@ -107,7 +107,7 @@ export default function Hero({heroImage}) {
           </div>
         </div>
       </Container> */}
-    </>
+    </div>
   );
 }
 
